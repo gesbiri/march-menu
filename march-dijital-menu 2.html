@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#eee5d8">
+<title>March. Coffee & Dessert — Menü</title>
+<style>
+:root{
+  --bg:#eee5d8; --ink:#18251b; --muted:#5f625c; --line:#253127;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:Arial,Helvetica,sans-serif;
+  letter-spacing:.02em;
+}
+.wrap{max-width:720px;margin:auto;padding:22px 18px 36px}
+header{text-align:center;padding:14px 0 28px}
+.brand{font-size:48px;line-height:.95;font-weight:700;letter-spacing:.12em}
+.sub{margin-top:12px;font-size:13px;letter-spacing:.34em}
+.tag{margin:20px auto 0;max-width:330px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:9px 0;font-size:10px;letter-spacing:.25em}
+nav{display:flex;gap:8px;overflow:auto;padding:4px 0 18px;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{
+  white-space:nowrap;text-decoration:none;color:var(--ink);
+  border:1px solid var(--line);padding:9px 12px;font-size:10px;
+  letter-spacing:.12em;text-transform:uppercase;
+}
+section{margin:8px 0 30px}
+h2{
+  font-size:22px;letter-spacing:.16em;margin:0 0 14px;
+  padding-bottom:8px;border-bottom:1px solid var(--line);
+}
+.item{display:grid;grid-template-columns:1fr auto;gap:12px;margin:0 0 16px}
+.name{font-size:14px;letter-spacing:.09em}
+.price{font-size:14px;font-weight:700;letter-spacing:.08em;white-space:nowrap}
+.desc{grid-column:1/-1;margin-top:-10px;color:var(--muted);font-size:11px;line-height:1.45;font-style:italic;letter-spacing:.01em}
+.price-head{display:grid;grid-template-columns:1fr 45px 45px;gap:6px;margin:-5px 0 8px;font-size:9px;letter-spacing:.12em;text-align:right}
+.double{display:grid;grid-template-columns:1fr 45px 45px;gap:6px}
+footer{border-top:1px solid var(--line);padding-top:16px;text-align:center;font-size:9px;letter-spacing:.12em;line-height:1.8}
+.note{color:var(--muted);font-size:10px;margin-top:5px}
+@media(max-width:380px){
+ .brand{font-size:40px}.wrap{padding-left:15px;padding-right:15px}
+ h2{font-size:19px}.name,.price{font-size:13px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">March.</div>
+  <div class="sub">COFFEE &amp; DESSERT</div>
+  <div class="tag">GOOD FOOD · BETTER DAYS</div>
+</header>
+
+<nav aria-label="Menü kategorileri">
+  <a href="#sandwiches">Sandwiches</a><a href="#dessert">Dessert</a><a href="#moctail">Moctail</a>
+  <a href="#espresso">Espresso</a><a href="#matcha">Matcha</a><a href="#tea">Tea</a><a href="#soft">Soft</a>
+</nav>
+
+<section id="sandwiches">
+<h2>SANDWICHES</h2>
+<div class="item"><div class="name">MARCH BREAKFAST</div><div class="price">350</div><div class="desc">çırpılmış yumurta, pastırma, avokado, peynir, acı biber, domates, yeşillik</div></div>
+<div class="item"><div class="name">MEDITERRANEAN</div><div class="price">250</div><div class="desc">zeytin ezmesi, ezine peyniri, çeri domates, turşu</div></div>
+<div class="item"><div class="name">TUSCAN</div><div class="price">250</div><div class="desc">hindi füme, pesto sosu, domates, yeşillik, kaşar</div></div>
+<div class="item"><div class="name">KOZETTA</div><div class="price">250</div><div class="desc">köz çeri domates, pesto sosu, ezine, yeşillik</div></div>
+<div class="item"><div class="name">MARIN</div><div class="price">250</div><div class="desc">ton balığı, yeşillik, domates, turşu, mayonez</div></div>
+</section>
+
+<section id="dessert">
+<h2>DESSERT</h2>
+<div class="item"><div class="name">COOKIE</div><div class="price">180</div></div>
+<div class="item"><div class="name">TIRAMISU</div><div class="price">250</div></div>
+<div class="item"><div class="name">CINNAMON ROLL</div><div class="price">250</div><div class="desc">(çeşitlerini sorunuz)</div></div>
+<div class="item"><div class="name">SAN SEBASTIAN</div><div class="price">250</div></div>
+<div class="item"><div class="name">BROWNIE</div><div class="price">275</div><div class="desc">extra dondurma +20</div></div>
+</section>
+
+<section id="moctail">
+<h2>MOCTAIL</h2>
+<div class="item"><div class="name">CIELO</div><div class="price">225</div><div class="desc">limon, vanilya, keskin, limonata</div></div>
+<div class="item"><div class="name">STRAWBERRY FIZZ</div><div class="price">225</div><div class="desc">bal, çilek, limon, soda</div></div>
+<div class="item"><div class="name">SOLARA</div><div class="price">225</div><div class="desc">portakal, limon, nane, soda</div></div>
+</section>
+
+<section id="espresso">
+<h2>ESPRESSO BAR</h2>
+<div class="price-head"><span></span><span>HOT</span><span>ICE</span></div>
+<div class="item double"><div class="name">AMERICANO</div><div class="price">170</div><div class="price">180</div></div>
+<div class="item"><div class="name">FİLTRE KAHVE</div><div class="price">160</div></div>
+<div class="item"><div class="name">ESPRESSO</div><div class="price">130</div></div>
+<div class="item"><div class="name">CAPPUCCINO</div><div class="price">180</div></div>
+<div class="item double"><div class="name">LATTE</div><div class="price">180</div><div class="price">190</div><div class="desc">karamel, vanilya, süt reçeli, frambuaz<br>sade karamel, fındık +20</div></div>
+<div class="item"><div class="name">CORTADO</div><div class="price">160</div></div>
+<div class="item"><div class="name">FLAT WHITE</div><div class="price">190</div></div>
+<div class="item double"><div class="name">MOCHA</div><div class="price">180</div><div class="price">190</div></div>
+<div class="item double"><div class="name">WHITE MOCHA</div><div class="price">180</div><div class="price">190</div></div>
+<div class="item"><div class="name">TÜRK KAHVESİ</div><div class="price">120</div></div>
+<div class="item"><div class="name">DOUBLE TÜRK KAHVESİ</div><div class="price">150</div></div>
+</section>
+
+<section id="matcha">
+<h2>MATCHA BAR</h2>
+<div class="item double"><div class="name">MATCHA LATTE</div><div class="price">220</div><div class="price">230</div></div>
+<div class="item double"><div class="name">VANİLLA MATCHA LATTE</div><div class="price">240</div><div class="price">250</div></div>
+<div class="item"><div class="name">STRAWBERRY MATCHA LATTE</div><div class="price">250</div></div>
+<div class="item"><div class="name">BERRY MATCHA LATTE</div><div class="price">250</div></div>
+</section>
+
+<section id="tea">
+<h2>HERBAL TEA</h2>
+<div class="item"><div class="name">ÇAY</div><div class="price">75</div></div>
+<div class="item"><div class="name">ADAÇAYI</div><div class="price">130</div></div>
+<div class="item"><div class="name">IHLAMUR</div><div class="price">130</div></div>
+<div class="item"><div class="name">KIŞ ÇAYI</div><div class="price">130</div></div>
+<div class="item"><div class="name">YEŞİL ÇAY</div><div class="price">130</div></div>
+<div class="item"><div class="name">NANE LİMON</div><div class="price">130</div></div>
+</section>
+
+<section id="soft">
+<h2>SOFT</h2>
+<div class="item"><div class="name">SU</div><div class="price">40</div></div>
+<div class="item"><div class="name">SODA</div><div class="price">50</div></div>
+<div class="item"><div class="name">CHURCHILL</div><div class="price">120</div></div>
+<div class="item"><div class="name">LİMONATA</div><div class="price">160</div><div class="desc">(çeşitlerini sorunuz)</div></div>
+<div class="item"><div class="name">CHAI TEA LATTE</div><div class="price">150</div></div>
+<div class="item"><div class="name">SICAK ÇİKOLATA</div><div class="price">150</div></div>
+<div class="item"><div class="name">SAHLEP</div><div class="price">160</div></div>
+</section>
+
+<footer>
+  EXTRA SHOT +50 &nbsp; | &nbsp; EXTRA ŞURUP +20 &nbsp; | &nbsp; LAKTOZSUZ SÜT +20 &nbsp; | &nbsp; VEGAN SÜT +40
+  <div class="note">March. Coffee &amp; Dessert</div>
+</footer>
+</div>
+</body>
+</html>
